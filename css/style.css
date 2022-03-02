@@ -79,4 +79,25 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+body {
+  background-color: #ff8f70;
+}
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-nav .dropdown-menu {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
