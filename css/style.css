@@ -3,6 +3,8 @@
 // ======
 */
 /* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -80,8 +82,54 @@ select {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Overpass", sans-serif;
+}
+
 body {
-  background-color: #ff8f70;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header h1,
+header p {
+  -webkit-transform: scale(1, 1.2);
+          transform: scale(1, 1.2);
+  color: white;
+  line-height: 1.2;
+}
+
+h1,
+.h1 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-weight: 300;
+}
+
+.navbar {
+  margin-top: 35px;
+}
+
+header h1 {
+  margin-top: 120px;
+}
+
+header p {
+  margin: 25px 0 50px;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  padding: 25px;
 }
 
 .navbar-container {
@@ -93,11 +141,24 @@ body {
           justify-content: space-between;
 }
 
+.navbar-logo {
+  width: 80px;
+}
+
 .navbar-collapse {
   display: none;
 }
 
 .navbar-nav .dropdown-menu {
   display: none;
+}
+
+header {
+  height: 600px;
+  border-bottom-left-radius: 90px;
+  text-align: center;
+  background-image: url(../images/bg-pattern-intro-mobile.svg), linear-gradient(-50deg, #ff3d54, #ff8f70);
+  background-size: auto 1300px, contain;
+  background-position: -350px -250px, center;
 }
 /*# sourceMappingURL=style.css.map */

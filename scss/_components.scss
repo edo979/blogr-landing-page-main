@@ -1,6 +1,10 @@
 // body
 body {
-  background-color: $Very-light-red;
+  background-color: $White;
+}
+
+.container {
+  padding: 25px;
 }
 
 // Top Navigation
@@ -8,6 +12,10 @@ body {
   &-container {
     display: flex;
     justify-content: space-between;
+  }
+
+  &-logo {
+    width: 80px;
   }
 
   &-collapse {
@@ -21,4 +29,15 @@ body {
       }
     }
   }
+}
+
+// Header
+header {
+  height: 600px;
+  border-bottom-left-radius: 90px;
+  text-align: center;
+  background-image: url(../images/bg-pattern-intro-mobile.svg),
+    linear-gradient(-50deg, $Light-red, $Very-light-red);
+  background-size: auto 1300px, contain;
+  background-position: -350px -250px, center;
 }
