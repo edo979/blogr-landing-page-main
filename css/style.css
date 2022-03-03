@@ -168,7 +168,7 @@ header .btn {
 }
 
 #section-2 {
-  margin-top: 250px;
+  margin: 250px 0 75px;
 }
 
 body {
@@ -273,5 +273,12 @@ main {
 #section-2 p,
 #section-2 h3 {
   color: white;
+}
+
+#section-3 .article-img {
+  height: 330px;
+  background-image: url(../images/illustration-laptop-mobile.svg);
+  background-size: 130%;
+  background-position: center;
 }
 /*# sourceMappingURL=style.css.map */

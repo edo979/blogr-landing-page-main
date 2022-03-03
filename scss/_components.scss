@@ -116,3 +116,13 @@ main {
     color: $White;
   }
 }
+
+// Section-3
+#section-3 {
+  .article-img {
+    height: 330px;
+    background-image: url(../images/illustration-laptop-mobile.svg);
+    background-size: 130%;
+    background-position: center;
+  }
+}
