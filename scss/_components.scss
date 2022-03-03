@@ -36,6 +36,45 @@ body {
   }
 }
 
+// Top Navigation Expanded
+.navbar {
+  &.expanded & {
+    &-container {
+      position: relative;
+    }
+
+    &-collapse {
+      display: block;
+      position: absolute;
+      width: 100%;
+
+      top: 70px;
+      left: 0;
+      background-color: $White;
+      z-index: 2;
+    }
+
+    &-nav {
+      &,
+      .dropdown-menu {
+        list-style: none;
+        padding: 0;
+      }
+
+      .dropdown {
+        &-toggle,
+        &-item {
+          text-decoration: none;
+        }
+
+        &-menu {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 // Header
 header {
   height: 600px;
