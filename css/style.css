@@ -82,6 +82,10 @@ select {
   }
 }
 
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -90,10 +94,33 @@ h5,
 h6 {
   font-family: "Overpass", sans-serif;
   font-weight: 600;
+  color: #1f3f5b;
 }
 
-body {
-  font-family: "Ubuntu", sans-serif;
+h1,
+.h1 {
+  font-size: 2.15rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+  line-height: 1.15;
+}
+
+p {
+  -webkit-transform: scale(1, 1.1);
+          transform: scale(1, 1.1);
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4b5862;
 }
 
 header h1,
@@ -110,11 +137,6 @@ header p {
   font-size: 1rem;
 }
 
-h1,
-.h1 {
-  font-size: 2.15rem;
-}
-
 .navbar {
   margin-top: 35px;
 }
@@ -129,6 +151,14 @@ header p {
 
 header .btn {
   margin: 0 5px;
+}
+
+.section-header {
+  margin: 105px 0 50px;
+}
+
+.article-title {
+  margin: 55px 0 25px;
 }
 
 body {
@@ -192,5 +222,20 @@ header {
 .btn-primary {
   background: White;
   color: #ff3d54;
+}
+
+main {
+  text-align: center;
+}
+
+#section-1 figure {
+  height: 330px;
+  background-image: url(../images/illustration-editor-mobile.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
 }
 /*# sourceMappingURL=style.css.map */

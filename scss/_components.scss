@@ -67,3 +67,23 @@ header {
   background: White;
   color: $Light-red;
 }
+
+// Main
+main {
+  text-align: center;
+}
+
+// Section-1
+#section-1 {
+  figure {
+    height: 330px;
+    background-image: url(../images/illustration-editor-mobile.svg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+// Padding top 0
+.pt-0 {
+  padding-top: 0 !important;
+}
