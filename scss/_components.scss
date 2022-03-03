@@ -103,7 +103,8 @@ main {
   background-image: url(../images/bg-pattern-circles.svg),
     linear-gradient(-225deg, $Very-dark-gray-blue, $Very-dark-desaturated-blue);
   background-size: cover;
-  background-position: center;
+  background-position: center -240px, center;
+  background-repeat: no-repeat no-repeat;
 
   .article-img {
     position: absolute;
@@ -125,4 +126,29 @@ main {
     background-size: 130%;
     background-position: center;
   }
+}
+
+// Footer
+footer {
+  display: grid;
+  place-content: center;
+  border-top-right-radius: 90px;
+
+  background-color: $Very-dark-black-blue;
+}
+
+.footer-logo {
+  display: block;
+  img {
+    margin: auto;
+  }
+}
+
+.list-group,
+.group-items,
+.nav-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
 }
