@@ -10,6 +10,7 @@ body {
 // Top Navigation
 .navbar {
   &-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
   }
@@ -25,35 +26,58 @@ body {
 
   &-collapse {
     display: none;
+    position: absolute;
+    width: 100%;
+    padding: 30px 25px;
+    top: 70px;
+    left: 0;
+    border-radius: 5px;
+    background-color: $White;
+    z-index: 2;
   }
 
   &-nav,
   .dropdown-menu {
     list-style: none;
-    padding: 0;
   }
 
   &-nav {
-    .dropdown {
-      margin: 0 0 20px;
+    margin: 0;
+    padding: 0;
+  }
+}
 
-      &-toggle,
-      &-item {
-        text-decoration: none;
-      }
+.dropdown {
+  margin: 0 0 20px;
 
-      &-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  &-toggle,
+  &-item {
+    text-decoration: none;
+  }
 
-        img {
-          margin-left: 10px;
-        }
-      }
+  &-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      &-menu {
-        display: none;
+    img {
+      margin-left: 10px;
+    }
+  }
+
+  &-menu {
+    display: none;
+
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background: lighten($color: $Light-red, $amount: 34%);
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
       }
     }
   }
@@ -62,24 +86,8 @@ body {
 // Top Navigation Expanded
 .navbar {
   &.expanded & {
-    &-container {
-      position: relative;
-    }
-
     &-collapse {
       display: block;
-      position: absolute;
-      width: 100%;
-      padding: 30px 25px;
-      top: 70px;
-      left: 0;
-      border-radius: 5px;
-      background-color: $White;
-      z-index: 2;
-    }
-
-    &-nav {
-      margin: 0;
     }
   }
 }
@@ -113,6 +121,7 @@ header {
 .btn {
   padding: 10px 20px;
   border: none;
+  border-radius: 30px;
   background: transparent;
   color: White;
   font-family: $ubuntu;
@@ -122,12 +131,19 @@ header {
 
 .btn-border {
   border: 1px solid $White;
-  border-radius: 30px;
 }
 
 .btn-primary {
   background: White;
   color: $Light-red;
+}
+
+.navbar-form {
+  .btn-primary {
+    display: inline-block;
+    background: linear-gradient(-90deg, $Light-red, $Very-light-red);
+    color: $White;
+  }
 }
 
 // Padding top 0

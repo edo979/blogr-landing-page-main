@@ -143,16 +143,13 @@ header p {
   font-size: 1rem;
 }
 
-.dropdown-toggle,
-.dropdown-item {
-  font-size: 1.2rem;
-}
-
 .dropdown-toggle {
+  font-size: 1.2rem;
   color: #25252d;
 }
 
 .dropdown-item {
+  font-size: 1.1rem;
   color: #4b5862;
 }
 
@@ -229,6 +226,7 @@ body {
 }
 
 .navbar-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,23 +246,35 @@ body {
 
 .navbar-collapse {
   display: none;
+  position: absolute;
+  width: 100%;
+  padding: 30px 25px;
+  top: 70px;
+  left: 0;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 2;
 }
 
 .navbar-nav,
 .navbar .dropdown-menu {
   list-style: none;
+}
+
+.navbar-nav {
+  margin: 0;
   padding: 0;
 }
 
-.navbar-nav .dropdown {
+.dropdown {
   margin: 0 0 20px;
 }
 
-.navbar-nav .dropdown-toggle, .navbar-nav .dropdown-item {
+.dropdown-toggle, .dropdown-item {
   text-decoration: none;
 }
 
-.navbar-nav .dropdown-toggle {
+.dropdown-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,32 +286,28 @@ body {
           justify-content: center;
 }
 
-.navbar-nav .dropdown-toggle img {
+.dropdown-toggle img {
   margin-left: 10px;
 }
 
-.navbar-nav .dropdown-menu {
+.dropdown-menu {
   display: none;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #ffebed;
 }
 
-.navbar.expanded .navbar-container {
-  position: relative;
+.dropdown-menu li {
+  margin-bottom: 10px;
+}
+
+.dropdown-menu li:last-of-type {
+  margin-bottom: 0;
 }
 
 .navbar.expanded .navbar-collapse {
   display: block;
-  position: absolute;
-  width: 100%;
-  padding: 30px 25px;
-  top: 70px;
-  left: 0;
-  border-radius: 5px;
-  background-color: white;
-  z-index: 2;
-}
-
-.navbar.expanded .navbar-nav {
-  margin: 0;
 }
 
 .dropdown.expanded .dropdown-toggle img {
@@ -325,6 +331,7 @@ header {
 .btn {
   padding: 10px 20px;
   border: none;
+  border-radius: 30px;
   background: transparent;
   color: White;
   font-family: "Ubuntu", sans-serif;
@@ -334,12 +341,18 @@ header {
 
 .btn-border {
   border: 1px solid white;
-  border-radius: 30px;
 }
 
 .btn-primary {
   background: White;
   color: #ff3d54;
+}
+
+.navbar-form .btn-primary {
+  display: inline-block;
+  background: -webkit-gradient(linear, right top, left top, from(#ff3d54), to(#ff8f70));
+  background: linear-gradient(-90deg, #ff3d54, #ff8f70);
+  color: white;
 }
 
 .pt-0 {
