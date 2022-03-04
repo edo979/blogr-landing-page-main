@@ -45,8 +45,13 @@ p {
 
 footer .nav-item,
 header p,
-p {
+p,
+.btn {
   transform: scale(1, 1.2);
+}
+
+.form-item.btn-primary {
+  transform: scale(1);
 }
 
 header {
@@ -71,6 +76,9 @@ header {
 
 .dropdown-item {
   font-size: 1.1rem;
+}
+.dropdown-item,
+.dropdown.expanded .dropdown-toggle {
   color: $Very-dark-grayish-blue;
 }
 

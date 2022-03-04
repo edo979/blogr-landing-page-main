@@ -20,14 +20,18 @@ $Very-dark-black-blue: hsl(240, 10%, 16%); //(footer background)
 
 //Background gradient - Intro/CTA mobile nav:
 
-$Very-light-red: hsl(13, 100%, 72%);
-$Light-red: hsl(353, 100%, 62%);
+$Very-light-red-1: hsl(13, 100%, 72%);
+$Light-red-1: hsl(353, 100%, 62%);
 
 //Background gradient - body:
 
 $Very-dark-gray-blue: hsl(237, 17%, 21%);
 $Very-dark-desaturated-blue: hsl(237, 23%, 32%);
 
+$Light-red-2: lighten(
+  $color: $Light-red-1,
+  $amount: 34.5%,
+);
 // fonts
 $overpass: 'Overpass', sans-serif;
 $ubuntu: 'Ubuntu', sans-serif;

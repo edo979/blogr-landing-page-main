@@ -126,9 +126,15 @@ p {
 
 footer .nav-item,
 header p,
-p {
+p,
+.btn {
   -webkit-transform: scale(1, 1.2);
           transform: scale(1, 1.2);
+}
+
+.form-item.btn-primary {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 header h1,
@@ -150,6 +156,10 @@ header p {
 
 .dropdown-item {
   font-size: 1.1rem;
+}
+
+.dropdown-item,
+.dropdown.expanded .dropdown-toggle {
   color: #4b5862;
 }
 
@@ -244,6 +254,14 @@ body {
   background: transparent;
 }
 
+.navbar-toggler #close {
+  display: none;
+}
+
+.navbar-toggler #open {
+  display: block;
+}
+
 .navbar-collapse {
   display: none;
   position: absolute;
@@ -264,6 +282,21 @@ body {
 .navbar-nav {
   margin: 0;
   padding: 0;
+}
+
+.navbar-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid #ffedef;
+  padding: 20px;
 }
 
 .dropdown {
@@ -295,7 +328,7 @@ body {
   margin-top: 30px;
   padding: 20px;
   border-radius: 5px;
-  background: #ffebed;
+  background: #ffedef;
 }
 
 .dropdown-menu li {
@@ -304,6 +337,14 @@ body {
 
 .dropdown-menu li:last-of-type {
   margin-bottom: 0;
+}
+
+.navbar.expanded .navbar-toggler #close {
+  display: block;
+}
+
+.navbar.expanded .navbar-toggler #open {
+  display: none;
 }
 
 .navbar.expanded .navbar-collapse {
@@ -329,6 +370,7 @@ header {
 }
 
 .btn {
+  text-decoration: none;
   padding: 10px 20px;
   border: none;
   border-radius: 30px;
@@ -345,14 +387,22 @@ header {
 
 .btn-primary {
   background: White;
-  color: #ff3d54;
+  color: #ff525d;
 }
 
 .navbar-form .btn-primary {
   display: inline-block;
+  margin-top: 15px;
+  padding: 10px 35px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   background: -webkit-gradient(linear, right top, left top, from(#ff3d54), to(#ff8f70));
   background: linear-gradient(-90deg, #ff3d54, #ff8f70);
   color: white;
+}
+
+.navbar-form .btn-secondary {
+  color: #25252d;
 }
 
 .pt-0 {
