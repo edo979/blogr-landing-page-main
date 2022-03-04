@@ -8,8 +8,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -27,8 +26,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role=list],
+ol[role=list] {
   list-style: none;
 }
 
@@ -69,19 +68,16 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
-  *::before,
-  *::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
-
 body {
   font-family: "Ubuntu", sans-serif;
 }
@@ -128,13 +124,11 @@ footer .nav-item,
 header p,
 p,
 .btn {
-  -webkit-transform: scale(1, 1.2);
-          transform: scale(1, 1.2);
+  transform: scale(1, 1.2);
 }
 
 .form-item.btn-primary {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 header h1,
@@ -142,7 +136,6 @@ header p {
   color: white;
   line-height: 1.1;
 }
-
 header p {
   font-weight: 300;
   letter-spacing: 1px;
@@ -171,13 +164,11 @@ header p {
 footer {
   color: white;
 }
-
 footer p {
   color: white;
   font-weight: 700;
   font-size: 1.1rem;
 }
-
 footer .nav-item {
   display: block;
   text-decoration: none;
@@ -194,11 +185,9 @@ footer .nav-item {
 header h1 {
   margin-top: 120px;
 }
-
 header p {
   margin: 25px 0 50px;
 }
-
 header .btn {
   margin: 0 5px;
 }
@@ -218,7 +207,6 @@ header .btn {
 footer {
   margin-top: 75px;
 }
-
 footer .group-name {
   margin: 35px 0 20px;
 }
@@ -237,31 +225,22 @@ body {
 
 .navbar-container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .navbar-logo {
   width: 80px;
 }
-
 .navbar-toggler {
   border: none;
   background: transparent;
 }
-
 .navbar-toggler #close {
   display: none;
 }
-
 .navbar-toggler #open {
   display: block;
 }
-
 .navbar-collapse {
   display: none;
   position: absolute;
@@ -273,89 +252,66 @@ body {
   background-color: white;
   z-index: 2;
 }
-
 .navbar-nav,
 .navbar .dropdown-menu {
   list-style: none;
 }
-
 .navbar-nav {
   margin: 0;
   padding: 0;
 }
-
 .navbar-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-top: 2px solid #ffedef;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid #ffd8dd;
   padding: 20px;
 }
 
 .dropdown {
   margin: 0 0 20px;
 }
-
 .dropdown-toggle, .dropdown-item {
   text-decoration: none;
 }
-
 .dropdown-toggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .dropdown-toggle img {
   margin-left: 10px;
 }
-
 .dropdown-menu {
   display: none;
   margin-top: 30px;
   padding: 20px;
   border-radius: 5px;
-  background: #ffedef;
+  background: #ffd8dd;
 }
-
 .dropdown-menu li {
   margin-bottom: 10px;
 }
-
 .dropdown-menu li:last-of-type {
   margin-bottom: 0;
+}
+.dropdown-item:hover, .dropdown-toggle:hover {
+  text-decoration: underline;
 }
 
 .navbar.expanded .navbar-toggler #close {
   display: block;
 }
-
 .navbar.expanded .navbar-toggler #open {
   display: none;
 }
-
 .navbar.expanded .navbar-collapse {
   display: block;
 }
 
 .dropdown.expanded .dropdown-toggle img {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-
 .dropdown.expanded .dropdown-menu {
   display: block;
 }
@@ -371,7 +327,7 @@ header {
 
 .btn {
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: none;
   border-radius: 30px;
   background: transparent;
@@ -386,21 +342,33 @@ header {
 }
 
 .btn-primary {
-  background: White;
+  background: white;
   color: #ff525d;
 }
-
-.navbar-form .btn-primary {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 35px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  background: -webkit-gradient(linear, right top, left top, from(#ff3d54), to(#ff8f70));
-  background: linear-gradient(-90deg, #ff3d54, #ff8f70);
+.btn-primary:hover {
+  background-color: #ff8b98;
+  border-color: #ff8b98;
   color: white;
 }
 
+.btn-secondary:hover {
+  background-color: white;
+  color: #ff525d;
+}
+
+.navbar-form .btn {
+  padding: 10px 35px;
+}
+.navbar-form .btn:hover {
+  text-decoration: underline;
+}
+.navbar-form .btn-primary {
+  display: inline-block;
+  margin-top: 15px;
+  transform: scale(1);
+  background: linear-gradient(-90deg, #ff3d54, #ff8f70);
+  color: white;
+}
 .navbar-form .btn-secondary {
   color: #25252d;
 }
@@ -435,13 +403,11 @@ main {
   background-position: center -240px, center;
   background-repeat: no-repeat no-repeat;
 }
-
 #section-2 .article-img {
   position: absolute;
   left: 0;
   top: -200px;
 }
-
 #section-2 p,
 #section-2 h3 {
   color: white;
@@ -455,17 +421,18 @@ main {
 }
 
 footer {
-  display: -ms-grid;
   display: grid;
   place-content: center;
   border-top-right-radius: 90px;
   background-color: #25252d;
 }
+footer .nav-item:hover {
+  text-decoration: underline;
+}
 
 .footer-logo {
   display: block;
 }
-
 .footer-logo img {
   margin: auto;
 }
@@ -478,4 +445,5 @@ footer {
   text-align: center;
   list-style: none;
 }
+
 /*# sourceMappingURL=style.css.map */

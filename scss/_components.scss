@@ -96,6 +96,12 @@ body {
       }
     }
   }
+  &-item,
+  &-toggle {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 // Top Navigation Expanded
@@ -141,10 +147,10 @@ header {
   background-position: -320px -235px, center;
 }
 
-// Butotns
+// Buttotns
 .btn {
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: none;
   border-radius: 30px;
   background: transparent;
@@ -159,15 +165,35 @@ header {
 }
 
 .btn-primary {
-  background: White;
+  background: $White;
   color: $Light-red;
+
+  &:hover {
+    background-color: $Light-red-3;
+    border-color: $Light-red-3;
+    color: $White;
+  }
+}
+
+.btn-secondary {
+  &:hover {
+    background-color: $White;
+    color: $Light-red;
+  }
 }
 
 .navbar-form {
+  .btn {
+    padding: 10px 35px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   .btn-primary {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 35px;
     transform: scale(1);
     background: linear-gradient(-90deg, $Light-red-1, $Very-light-red-1);
     color: $White;
@@ -245,6 +271,12 @@ footer {
   border-top-right-radius: 90px;
 
   background-color: $Very-dark-black-blue;
+
+  .nav-item {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .footer-logo {

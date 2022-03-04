@@ -28,10 +28,8 @@ $Light-red-1: hsl(353, 100%, 62%);
 $Very-dark-gray-blue: hsl(237, 17%, 21%);
 $Very-dark-desaturated-blue: hsl(237, 23%, 32%);
 
-$Light-red-2: lighten(
-  $color: $Light-red-1,
-  $amount: 34.5%,
-);
+$Light-red-2: mix($Light-red-1, white, 20%);
+$Light-red-3: mix($Light-red-1, white, 60%);
 // fonts
 $overpass: 'Overpass', sans-serif;
 $ubuntu: 'Ubuntu', sans-serif;
