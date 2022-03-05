@@ -51,12 +51,12 @@ footer {
     align-items: center;
 
     .article {
-      flex: 1;
+      flex: 1 1 50%;
       order: 1;
     }
 
     .article-img {
-      flex: 1;
+      flex: 1 1 50%;
       order: 2;
     }
   }
