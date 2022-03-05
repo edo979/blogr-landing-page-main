@@ -237,7 +237,7 @@ main {
   border-top-right-radius: 90px;
 
   background-image: url(../images/bg-pattern-circles.svg),
-    linear-gradient(-225deg, $Very-dark-gray-blue, $Very-dark-desaturated-blue);
+    linear-gradient(45deg, $Very-dark-gray-blue, $Very-dark-desaturated-blue);
   background-size: cover;
   background-position: center -240px, center;
   background-repeat: no-repeat no-repeat;
@@ -302,20 +302,18 @@ footer {
   }
 
   .section-header {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 2.5rem;
   }
 
   .start-padding {
-    padding: 70px 0 0px 165px;
+    padding: 70px 0 55px 165px;
   }
 
   .container {
     padding: 0;
   }
 
+  // Section 1
   #section-1 {
     .article-img {
       height: auto;
@@ -336,6 +334,33 @@ footer {
     }
     p {
       margin: 35px 0 80px;
+    }
+  }
+
+  // Section 2
+  #section-2 {
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    background-size: 71%, contain;
+    background-position: -215px -500px, center;
+    background-repeat: no-repeat no-repeat;
+
+    .article {
+      padding: 120px 150px 90px 20px;
+      margin: 0;
+    }
+
+    .article-img {
+      max-height: 500px;
+      top: -70px;
+      left: 130px;
+    }
+
+    p {
+      margin-bottom: 0;
+      transform: scale(1);
     }
   }
 }
