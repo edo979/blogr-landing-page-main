@@ -468,10 +468,10 @@ footer {
     background-repeat: no-repeat no-repeat;
 
     .article-img {
-      max-height: 500px;
+      max-width: 550px;
       top: -70px;
-      left: 130px;
-      transform: translateX(0);
+      left: 25%;
+      transform: translateX(-50%);
     }
 
     p {

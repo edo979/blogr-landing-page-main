@@ -7,8 +7,12 @@ navBtn.addEventListener('click', (e) => navEl.classList.toggle('expanded'))
 
 dropdownBtnEls.forEach((dropdownBtn) => {
   dropdownBtn.addEventListener('click', (e) => {
-    dropdownEls.forEach((dropdown) => dropdown.classList.remove('expanded'))
+    if (e.target.parentElement.classList.contains('expanded')) {
+      e.target.parentElement.classList.remove('expanded')
+    } else {
+      dropdownEls.forEach((dropdown) => dropdown.classList.remove('expanded'))
 
-    e.target.parentElement.classList.toggle('expanded')
+      e.target.parentElement.classList.toggle('expanded')
+    }
   })
 })
