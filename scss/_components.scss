@@ -301,8 +301,15 @@ footer {
     margin: 0 auto;
   }
 
+  .section-header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+  }
+
   .start-padding {
-    padding: 50px 0 50px 140px;
+    padding: 70px 0 0px 165px;
   }
 
   .container {
@@ -319,8 +326,16 @@ footer {
     }
   }
 
-  article.article {
-    padding-right: 100px;
+  .article {
+    margin-top: 245px;
+    padding-right: 90px;
     text-align: left;
+
+    h3 {
+      margin: 0;
+    }
+    p {
+      margin: 35px 0 80px;
+    }
   }
 }

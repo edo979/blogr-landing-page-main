@@ -43,12 +43,15 @@ footer {
 @include mq {
   .section-header {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 160px 0 0;
   }
 
   #section-1 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 
     .article {
       flex: 1 1 50%;
