@@ -277,6 +277,10 @@ footer .group-name {
     width: 50%;
     margin-left: auto;
   }
+  #section-2 .article {
+    padding: 120px 150px 90px 25px;
+    margin: 0;
+  }
   #section-3 {
     gap: 50px;
     margin-top: 60px;
@@ -615,10 +619,6 @@ footer .nav-item:hover {
     background-size: 71%, contain;
     background-position: -215px -500px, center;
     background-repeat: no-repeat no-repeat;
-  }
-  #section-2 .article {
-    padding: 120px 150px 90px 25px;
-    margin: 0;
   }
   #section-2 .article-img {
     max-height: 500px;
