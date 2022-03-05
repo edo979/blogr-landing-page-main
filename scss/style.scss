@@ -36,8 +36,26 @@ $ubuntu: 'Ubuntu', sans-serif;
 
 // Mixins
 @mixin mq {
-  @media (min-width: 1023px) {
+  @media (min-width: 1200px) {
     @content;
+  }
+}
+
+@mixin primary-button-1 {
+  background: $White;
+  color: $Light-red;
+
+  &:hover {
+    background-color: $Light-red-3;
+    border-color: $Light-red-3;
+    color: $White;
+  }
+}
+
+@mixin secondary-button-1 {
+  &:hover {
+    background-color: $White;
+    color: $Light-red;
   }
 }
 

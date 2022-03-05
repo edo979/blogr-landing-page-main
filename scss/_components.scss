@@ -33,14 +33,6 @@ body {
 
   &-collapse {
     display: none;
-    position: absolute;
-    width: 100%;
-    padding: 30px 25px;
-    top: 70px;
-    left: 0;
-    border-radius: 5px;
-    background-color: $White;
-    z-index: 2;
   }
 
   &-nav,
@@ -51,14 +43,6 @@ body {
   &-nav {
     margin: 0;
     padding: 0;
-  }
-
-  &-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 2px solid $Light-red-2;
-    padding: 20px;
   }
 }
 
@@ -98,6 +82,17 @@ body {
   }
   &-item,
   &-toggle {
+    &::after {
+      content: '';
+      margin-left: 10px;
+      background-image: url('../images/icon-arrow-dark.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 10px;
+      height: 10px;
+      transform-origin: 50% 40%;
+    }
+
     &:hover {
       text-decoration: underline;
     }
@@ -118,6 +113,22 @@ body {
 
     &-collapse {
       display: block;
+      position: absolute;
+      width: 100%;
+      padding: 30px 25px;
+      top: 70px;
+      left: 0;
+      border-radius: 5px;
+      background-color: $White;
+      z-index: 2;
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 2px solid $Light-red-2;
+      padding: 20px;
     }
   }
 }
@@ -125,7 +136,7 @@ body {
 .dropdown {
   &.expanded & {
     &-toggle {
-      img {
+      &::after {
         transform: rotate(180deg);
       }
     }
@@ -165,21 +176,11 @@ header {
 }
 
 .btn-primary {
-  background: $White;
-  color: $Light-red;
-
-  &:hover {
-    background-color: $Light-red-3;
-    border-color: $Light-red-3;
-    color: $White;
-  }
+  @include primary-button-1;
 }
 
 .btn-secondary {
-  &:hover {
-    background-color: $White;
-    color: $Light-red;
-  }
+  @include secondary-button-1;
 }
 
 .navbar-form {
@@ -244,8 +245,11 @@ main {
 
   .article-img {
     position: absolute;
-    left: 0;
+    max-width: 450px;
+    min-width: 395px;
+    left: 50%;
     top: -200px;
+    transform: translateX(-50%);
   }
 
   p,
@@ -306,6 +310,117 @@ footer {
     margin: 0 auto;
   }
 
+  header {
+    background-image: url(../images/bg-pattern-intro-desktop.svg),
+      linear-gradient(-50deg, $Light-red-1, $Very-light-red-1);
+    background-repeat: no-repeat;
+    background-size: 215%, contain;
+    background-position: -400px -1250px, center;
+
+    .container {
+      padding: 50px 150px;
+    }
+  }
+
+  // Navigation
+
+  .form-item.btn-primary {
+    margin: 0;
+    @include primary-button-1;
+  }
+
+  .form-item.btn-secondary {
+    color: $White;
+    font-weight: 300;
+    padding: 13px 35px;
+
+    @include secondary-button-1;
+  }
+
+  .btn {
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+
+  .navbar {
+    margin: 0;
+
+    &-logo {
+      width: 120px;
+    }
+
+    &-container {
+      align-items: start;
+      justify-content: start;
+    }
+
+    &-toggler {
+      display: none;
+    }
+
+    &-collapse {
+      padding: 0 !important;
+      display: flex;
+      align-items: baseline;
+      width: 100%;
+    }
+
+    &-nav {
+      display: flex;
+      gap: 40px;
+      margin-left: 65px;
+      margin-right: auto;
+    }
+
+    &-form {
+      margin-left: auto;
+    }
+  }
+
+  .dropdown {
+    &-toggle {
+      color: $White;
+      font-size: 1rem;
+      font-weight: 300;
+
+      &::after {
+        content: '';
+        background-image: url('../images/icon-arrow-light.svg');
+      }
+    }
+
+    &-menu {
+      position: absolute;
+      padding: 20px;
+      padding-right: 100px;
+      text-align: left;
+      background-color: $White;
+    }
+  }
+
+  .dropdown {
+    &.expanded & {
+      &-toggle {
+        color: $White;
+        font-weight: 700;
+      }
+
+      &-menu {
+        z-index: 5;
+      }
+
+      &-item {
+        color: $Very-dark-black-blue;
+        font-weight: 500;
+
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
   .section-header {
     font-size: 2.5rem;
   }
@@ -356,6 +471,7 @@ footer {
       max-height: 500px;
       top: -70px;
       left: 130px;
+      transform: translateX(0);
     }
 
     p {
@@ -404,16 +520,16 @@ footer {
 
   .footer-logo {
     margin: 0;
+    min-width: 100px;
   }
   .nav-footer {
     display: flex;
-    justify-content: start;
-    gap: 200px;
 
     .nav-list {
       display: flex;
       gap: 200px;
       justify-content: space-between;
+      margin-left: 200px;
     }
 
     .list-group,
