@@ -109,3 +109,12 @@ footer {
     color: $Grayish-blue;
   }
 }
+
+@include mq {
+  footer .nav-item,
+  header p,
+  p,
+  .btn {
+    transform: scale(1);
+  }
+}

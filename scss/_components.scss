@@ -348,7 +348,7 @@ footer {
     background-repeat: no-repeat no-repeat;
 
     .article {
-      padding: 120px 150px 90px 20px;
+      padding: 120px 150px 90px 25px;
       margin: 0;
     }
 
@@ -360,7 +360,24 @@ footer {
 
     p {
       margin-bottom: 0;
-      transform: scale(1);
     }
+  }
+
+  // Section 3
+  #section-3 {
+    .article-img {
+      height: auto;
+      min-height: 780px;
+      margin-top: 60px;
+
+      background-image: url(../images/illustration-laptop-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: cover;
+    }
+  }
+
+  .end-padding {
+    padding-right: 150px;
   }
 }
