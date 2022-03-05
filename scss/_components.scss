@@ -294,3 +294,24 @@ footer {
   text-align: center;
   list-style: none;
 }
+
+@include mq {
+  .main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .start-padding {
+    padding: 50px 0 50px 150px;
+  }
+
+  #section-1 {
+    .article-img {
+      height: auto;
+      min-height: 900px;
+
+      background-image: url(../images/illustration-editor-desktop.svg);
+      background-position: left;
+    }
+  }
+}

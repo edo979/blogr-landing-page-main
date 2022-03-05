@@ -215,6 +215,25 @@ footer .group-name {
   margin: 50px 0 70px;
 }
 
+@media (min-width: 1023px) {
+  .section-header {
+    position: absolute;
+  }
+
+  #section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #section-1 .article {
+    flex: 1;
+    order: 1;
+  }
+  #section-1 .article-img {
+    flex: 1;
+    order: 2;
+  }
+}
 body {
   background-color: white;
 }
@@ -444,6 +463,24 @@ footer .nav-item:hover {
   padding: 0;
   text-align: center;
   list-style: none;
+}
+
+@media (min-width: 1023px) {
+  .main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .start-padding {
+    padding: 50px 0 50px 150px;
+  }
+
+  #section-1 .article-img {
+    height: auto;
+    min-height: 900px;
+    background-image: url(../images/illustration-editor-desktop.svg);
+    background-position: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -34,6 +34,13 @@ $Light-red-3: mix($Light-red-1, white, 60%);
 $overpass: 'Overpass', sans-serif;
 $ubuntu: 'Ubuntu', sans-serif;
 
+// Mixins
+@mixin mq {
+  @media (min-width: 1023px) {
+    @content;
+  }
+}
+
 @import 'reset';
 @import 'typography';
 @import 'layout';

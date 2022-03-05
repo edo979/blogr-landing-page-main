@@ -39,3 +39,25 @@ footer {
 .footer-logo {
   margin: 50px 0 70px;
 }
+
+@include mq {
+  .section-header {
+    position: absolute;
+  }
+
+  #section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .article {
+      flex: 1;
+      order: 1;
+    }
+
+    .article-img {
+      flex: 1;
+      order: 2;
+    }
+  }
+}
