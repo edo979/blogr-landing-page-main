@@ -612,7 +612,11 @@ footer .nav-item:hover {
     background-position: -400px -1250px, center;
   }
   header .container {
-    padding: 50px 150px;
+    padding: 65px 150px 0;
+  }
+  header h1 {
+    font-size: 3.5rem;
+    margin-top: 140px;
   }
   .form-item.btn-primary {
     margin: 0;
