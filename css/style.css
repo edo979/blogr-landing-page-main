@@ -197,6 +197,10 @@ footer .nav-item {
   }
 }
 
+.main-container {
+  min-width: 350px;
+}
+
 .navbar {
   margin-top: 35px;
 }
@@ -227,14 +231,6 @@ header .btn {
 
 footer {
   margin-top: 75px;
-}
-
-footer .group-name {
-  margin: 35px 0 20px;
-}
-
-.footer-logo {
-  margin: 50px 0 70px;
 }
 
 @media (min-width: 1023px) {
@@ -560,11 +556,16 @@ footer {
   background-color: #25252d;
 }
 
+footer .group-name {
+  margin: 35px 0 20px;
+}
+
 footer .nav-item:hover {
   text-decoration: underline;
 }
 
 .footer-logo {
+  margin: 50px 0 70px;
   display: block;
 }
 
@@ -639,6 +640,48 @@ footer .nav-item:hover {
   }
   .end-padding {
     padding-right: 150px;
+  }
+  footer {
+    display: block;
+  }
+  footer .container {
+    padding: 70px 160px;
+  }
+  footer .group-name {
+    margin: 0px 0 30px;
+  }
+  footer .group-name,
+  footer .nav-item {
+    font-size: 0.9rem;
+  }
+  footer .nav-item {
+    margin: 5px 0;
+  }
+  .footer-logo {
+    margin: 0;
+  }
+  .nav-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 200px;
+  }
+  .nav-footer .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-footer .list-group,
+  .nav-footer .group-items,
+  .nav-footer .nav-list {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */

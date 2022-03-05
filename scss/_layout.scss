@@ -1,3 +1,7 @@
+.main-container {
+  min-width: 350px;
+}
+
 .navbar {
   margin-top: 35px;
 }
@@ -30,14 +34,6 @@ header {
 
 footer {
   margin-top: 75px;
-
-  .group-name {
-    margin: 35px 0 20px;
-  }
-}
-
-.footer-logo {
-  margin: 50px 0 70px;
 }
 
 @include mq {

@@ -272,6 +272,10 @@ footer {
 
   background-color: $Very-dark-black-blue;
 
+  .group-name {
+    margin: 35px 0 20px;
+  }
+
   .nav-item {
     &:hover {
       text-decoration: underline;
@@ -280,6 +284,7 @@ footer {
 }
 
 .footer-logo {
+  margin: 50px 0 70px;
   display: block;
   img {
     margin: auto;
@@ -374,5 +379,47 @@ footer {
 
   .end-padding {
     padding-right: 150px;
+  }
+
+  footer {
+    display: block;
+
+    .container {
+      padding: 70px 160px;
+    }
+
+    .group-name {
+      margin: 0px 0 30px;
+    }
+
+    .group-name,
+    .nav-item {
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      margin: 5px 0;
+    }
+  }
+
+  .footer-logo {
+    margin: 0;
+  }
+  .nav-footer {
+    display: flex;
+    justify-content: start;
+    gap: 200px;
+
+    .nav-list {
+      display: flex;
+      gap: 200px;
+      justify-content: space-between;
+    }
+
+    .list-group,
+    .group-items,
+    .nav-list {
+      text-align: left;
+    }
   }
 }
